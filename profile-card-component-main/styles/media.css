@@ -1,0 +1,61 @@
+@media only screen and (max-width:320px){
+    
+    .profile-card{
+        width: 280px;
+        
+     }
+
+     .imgtop{
+        
+        position: fixed;
+        top: -30vh;
+        left: -55vh;
+    }
+        
+    .imgbottom{
+        
+        position: fixed;
+        bottom: -30vh;
+        right: -55vh;
+    }
+}
+
+
+@media only screen and (max-width:375px){
+    
+    .profile-card{
+        width: 300px;
+       
+     }
+     .imgtop{
+        
+        position: fixed;
+        top: -30vh;
+        left: -55vh;
+    }
+        
+    .imgbottom{
+        
+        position: fixed;
+        bottom: -30vh;
+        right: -55vh;
+    }
+}
+
+@media only screen and (max-width:425px){
+    
+     .imgtop{
+        
+        position: fixed;
+        top: -30vh;
+        left: -55vh;
+    }
+        
+    .imgbottom{
+        
+        position: fixed;
+        bottom: -30vh;
+        right: -55vh;
+    }
+}
+
