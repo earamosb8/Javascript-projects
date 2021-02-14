@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        
+        function loadJson() {
+            document.getElementById("candidatos").options.length = 0;
+            
+            let match = null;
+            let selection = document.getElementById('corporaciones').value;
+            fetch("jsonfiles/"+selection+".json")
+            .then(function(response) {
+                return(response.json());
+                
+            })
+            .then(function(data){
+
+                let radiovalue=document.querySelector("[type=radio]:checked");
+                if (radiovalue){
+                    radiovalue = radiovalue.value;
+                }
+                function obtenerCorporacion(age) {
+                    return age = age;
+                }
+                let combo = document.getElementById("candidatos")
+                combo.remove(combo.selectedIndex);
+                document.getElementById('datos').innerHTML= selection+ " " + radiovalue;
+                for(let key in data){
+                   if (key === radiovalue){
+                       match = key;
+                       break;
+                   }
+                }
+                let vals = Object.keys(data[match]).length;
+                for(let i = 0; i < vals; i++){
+                    var option = document.createElement('option')
+                    combo.options.add(option, i);
+                    combo.options[i].value = data[match][i];
+                    combo.options[i].innerText = data[match][i];
+                }
+                   /* document.getElementById('datos2').innerHTML= data[key]*/
+                   
+                
+            })
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <select name="corporaciones" id="corporaciones">
+
+        <option>Alcaldia</option>
+        
+        <option>Consejo</option>
+        
+        <option>Asamblea</option>
+        
+    </select>
+    <form  name="forminputs"></form>
+        <input type="radio" id="2016" name="age" value="2016" checked>
+        <label for="2016">2016</label>
+        <input type="radio" id="2017" name="age" value="2017">
+        <label for="2017">2017</label>
+        <input type="radio" id="2016" name="age" value="2018">
+        <label for="2018">2018</label>
+        <input type="radio" id="2016" name="age" value="2019">
+        <label for="2019">2019</label>
+    </form>
+
+    <button id="button1" onclick="loadJson()">CARGAR JSON</button>
+    <p id= "datos"></p>
+    <p id= "datos2"></p>
+
+    <select name="candidatos" id="candidatos">
+
+        
+    </select>
+    
+    
+</body>
+</html>
