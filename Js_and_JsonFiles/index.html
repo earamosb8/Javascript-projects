@@ -22,9 +22,7 @@
                 if (radiovalue){
                     radiovalue = radiovalue.value;
                 }
-                function obtenerCorporacion(age) {
-                    return age = age;
-                }
+                
                 let combo = document.getElementById("candidatos")
                 combo.remove(combo.selectedIndex);
                 document.getElementById('datos').innerHTML= selection+ " " + radiovalue;
@@ -61,13 +59,13 @@
         
     </select>
     <form  name="forminputs"></form>
-        <input type="radio" id="2016" name="age" value="2016" checked>
+        <input type="radio" id="2011" name="age" value="2011" checked>
+        <label for="2011">2011</label>
+        <input type="radio" id="2013" name="age" value="2013">
+        <label for="2013">2013</label>
+        <input type="radio" id="2016" name="age" value="2016">
         <label for="2016">2016</label>
-        <input type="radio" id="2017" name="age" value="2017">
-        <label for="2017">2017</label>
-        <input type="radio" id="2016" name="age" value="2018">
-        <label for="2018">2018</label>
-        <input type="radio" id="2016" name="age" value="2019">
+        <input type="radio" id="2019" name="age" value="2019">
         <label for="2019">2019</label>
     </form>
 

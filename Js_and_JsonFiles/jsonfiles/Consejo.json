@@ -1,17 +1,29 @@
 {
-    "2016":[
+    "2011":[
         "c1","c2","c3"
     ],
-    "2017":[
+    "2013":[
         "c4","c5","c6"
     ],
-    "2018":[
+    "2016":[
         "c7","c8","c9"
     ],
     "2019":[
-        "c10","c11","c13"
-    ],
-    "2020":[
-        "c14","c15","c16"
+        "PARTIDO LIBERAL COLOMBIANO",
+        "PARTIDO DE LA U",
+        "PARTIDO ALIANZA VERDE",
+        "PARTIDO CONSERVADOR COLOMBIANO",
+        "PARTIDO CAMBIO RADICAL",
+        "PARTIDO COLOMBIA RENACIENTE",
+        "PARTIDO CENTRO DEMOCRÁTICO CANDIDATO",
+        "SEBASTIAN JARE QUIÑONEZ CASTILLO",
+        "PARTIDO COLOMBIA JUSTA LIBRES",
+        "PARTIDO POLO DEMOCRÁTICO ALTERNATIVO",
+        "PARTIDO POLÍTICO MIRA",
+        "COALICIÓN CONVERGENCIA HUMANA",
+        "PARTIDO ALIANZA SOCIAL INDEPENDIENTE ASI",
+        "MOVIMIENTO ALTERNATIVO INDÍGENA Y SOCIAL",
+        "PARTIDO ADA"
+
     ]
 }
