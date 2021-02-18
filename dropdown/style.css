@@ -1,0 +1,45 @@
+*{
+    margin:0;
+
+}
+
+.navbar{
+    display: flex;
+    background-color: antiquewhite;
+    font-weight: bold;
+    list-style: none;
+    
+    line-height: 30px;
+}
+
+ul{
+    cursor: pointer;
+}
+li{
+    list-style: none;
+    
+   
+}
+[class*="items"]{
+    background-color: azure;
+    border: solid 0.5px;
+    padding: 0;
+    position: absolute;
+    visibility: hidden;
+}
+
+.home:hover .items1{
+    visibility: visible;
+}
+
+.contact:hover .items2{
+    visibility: visible;
+}
+
+.dropdown:hover .items2{
+    visibility: visible;
+}
+
+[class*="items"] >li:hover{
+    background-color:red;
+}
